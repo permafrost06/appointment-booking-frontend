@@ -33,7 +33,7 @@ const submitHandler = async () => {
 
       adminStore.addToken(json.token);
 
-      router.push({ name: "Teachers - Admin" });
+      router.push({ name: "Account Requests" });
     } else {
       invalidCreds.value = true;
     }
