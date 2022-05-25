@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 interface LoginFormData {
-  email: string;
+  username: string;
   password: string;
 }
 
@@ -50,7 +50,7 @@ const submitHandler = async () => {
     />
     <FormKit
       type="text"
-      name="email"
+      name="username"
       label="Email"
       placeholder="jane@example.com"
       validation="required|email"
