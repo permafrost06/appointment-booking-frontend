@@ -177,7 +177,7 @@ onMounted(() => {
         <template v-slot:day-content="{ day, attributes }">
           <!-- temporary hack to hide past month dates -->
           <div v-if="day.month == 6">
-            {{ day.day }}
+            <div>{{ day.day }}</div>
             <div class="appointments-holder">
               <AppointmentComponent
                 v-for="attr in attributes"
@@ -192,3 +192,10 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style>
+.vc-day {
+  position: static;
+  z-index: auto;
+}
+</style>

@@ -197,4 +197,9 @@ onMounted(() => {
   <button @click="logOutHandler">Log Out</button>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.vc-day {
+  position: static;
+  z-index: auto;
+}
+</style>
