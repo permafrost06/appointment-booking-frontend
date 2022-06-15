@@ -33,7 +33,7 @@ const newAgenda = ref("");
 
   z-index: 999;
 
-  transform: translateX(-25%) translateY(5%);
+  transform: translateX(-110%) translateY(-20%);
 
   textarea {
     margin: 0;
@@ -59,12 +59,13 @@ const newAgenda = ref("");
     content: "";
     width: 0;
     height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
 
-    border-bottom: 15px solid hsl(0, 0%, 50%);
+    border: 0 solid transparent;
+    border-bottom-width: 15px;
+    border-top-width: 15px;
+    border-left: 20px solid hsl(0, 0%, 50%);
 
-    transform: translate(250%, -215%);
+    transform: translate(980%, 40%);
   }
 }
 
